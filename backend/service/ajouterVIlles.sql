@@ -1,0 +1,1 @@
+call remplirVille(:codePostal,:nomVille)
