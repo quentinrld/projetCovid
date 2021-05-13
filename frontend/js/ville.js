@@ -26,7 +26,7 @@ function callbackVilles() {
 
 function ajouterVille(formulaireVille) {
     let xhr = new XMLHttpRequest();
-    xhr.open('get', 'ajouterVilles?villeNom=(formulaireVille.nomVille.value)&codePostale=(formulaireVille.codePostal.value)', true);
+    xhr.open('get', 'ajouterVilles?nomville=' + formulaireVille.nomVille.value + '&codePostal=' + formulaireVille.codePostal.value, true);
     xhr.onload = initVille;
     xhr.send();
     return false;
